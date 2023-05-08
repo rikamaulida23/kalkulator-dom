@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tugas 2</title>
+</head>
+<body>
+    <form class="container" name="calculator">
+        
+        <h1>Kalkulator Sederhana</h1>
+
+        <div class="content">
+
+
+            <input class="input1" type="number" name="num1" placeholder="angka 1">
+            <input class="input1" type="number" name="num2" placeholder="angka 2">
+             
+        
+            <p>
+            <button class="tombol" type="button" onclick="tambah()" value="  +  ">+</button>
+            <button class="tombol" type="button" onclick="kurang()" value="  -  ">-</button>
+            <button class="tombol" type="button" onclick="kali()" value="  *  ">x</button>
+            <button class="tombol" type="button" onclick="bagi()" value="  /  ">/</button>
+            </p>
+
+            <input class="inputx" type="number" name="result" placeholder="result">
+        </div>
+        
+    </form>
+
+   <script type="text/javascript">
+        function tambah(){
+            var num1=parseFloat(document.calculator.num1.value);
+            var num2=parseFloat(document.calculator.num2.value);
+            var result= num1+num2;
+            document.calculator.result.value=result;
+        }
+        function kurang(){
+            var num1=parseFloat(document.calculator.num1.value);
+            var num2=parseFloat(document.calculator.num2.value);
+            var result= num1-num2;
+            document.calculator.result.value=result;
+        }
+        function kali(){
+            var num1=parseFloat(document.calculator.num1.value);
+            var num2=parseFloat(document.calculator.num2.value);
+            var result= num1*num2;
+            document.calculator.result.value=result;
+        }
+        function bagi(){
+            var num1=parseFloat(document.calculator.num1.value);
+            var num2=parseFloat(document.calculator.num2.value);
+            var result= num1/num2;
+            document.calculator.result.value=result;
+        }
+    </script>
+</body>
+</html>
